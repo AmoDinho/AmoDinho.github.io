@@ -3,33 +3,43 @@
 	font-family: 'Alegreya Sans SC', sans-serif;
 }.footer,
 .header {
-	background: #ABA0CB;
-	color: white;
-	  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-     -webkit-animation: colorchange 50s; /* Chrome and Safari */
+	color: #fff
+
 }
 
 @keyframes colorchange
     {
+
+			0%   {background:#C200FB;}
+      25%  {background: #EC0868;}
+      50%  {background:#FC2F00;}
+      75%  {background:#EC7D10;}
+      100% {background: #FFBC0A;}
+			/*
       0%   {background: red;}
       25%  {background: yellow;}
       50%  {background: blue;}
       75%  {background: green;}
       100% {background: red;}
+			*/
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
  {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
+      0%   {background:#C200FB;}
+      25%  {background: #EC0868;}
+      50%  {background:#FC2F00;}
+      75%  {background:#EC7D10;}
+      100% {background: #FFBC0A;}
     } 
 
-.ctas-button {
+#twitter{
+
 	color: #fff;
+}
+.ctas-button {
+
+/*	color: #fff;*/
 }@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400i');
 *,
 *:before,
@@ -38,7 +48,14 @@
   box-sizing: border-box;
 }
 body {
+	padding:0;
+	margin: auto;
   -webkit-font-smoothing: antialiased;
+	background: #ABA0CB;
+/*	color: white;*/
+	  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+     -webkit-animation: colorchange 50s; /* Chrome and Safari */
 }
 /*text*/
 .heading {
@@ -194,13 +211,13 @@ p.paragraph {
 	height: 42px;
 	line-height: 38px;
 	padding: 0 30px;
-	background: #fff;
+/*	background: #fff;*/
 	border-radius: 3px;
 	font-size: 15px;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .3px;
-	border: 1px solid white;
+/*	border: 1px solid white;*/
 	text-decoration: none;
 	color: black;
 }
